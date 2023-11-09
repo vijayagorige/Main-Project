@@ -10,13 +10,13 @@ import com.medicine.repository.MedicineRepository;
 
 
 @SpringBootApplication
-public class MedicineOrderingSystemApplication  {
+public class MedicineOrderingSystemApplication implements CommandLineRunner  {
 
 	public static void main(String[] args) {
 		SpringApplication.run(MedicineOrderingSystemApplication.class, args);
 		System.out.println("Order your medicines");
 	}
-	/*@Autowired
+	@Autowired
 	private MedicineRepository medicineRepository;
 	
 	@Override
@@ -30,7 +30,7 @@ public class MedicineOrderingSystemApplication  {
 		
 		MedicineRecords medicineRecord3=new MedicineRecords("Triz","citrizen","10 mg", "2025-3-24",20.61,40," relief from cold");
 		medicineRepository.save(medicineRecord3);
-	}*/
+	}
 	
 
 }
